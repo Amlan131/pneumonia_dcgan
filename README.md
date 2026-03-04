@@ -29,7 +29,7 @@ In skewed medical datasets, real progress shows up in minority-class recall — 
 ![Synthetic X-rays](Results/03_synthetic_xrays.png)
 
 ### Training Metrics — Original vs GAN-Augmented
-![Metrics](Results/05_metrics_comparison.jpg)
+![Metrics](Results/05_metrics_comparison.png)
 
 
 ## Setup
