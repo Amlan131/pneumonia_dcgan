@@ -26,7 +26,7 @@ learned pathology, but because it learned prevalence.
 Accuracy barely moved. That was the point.  
 In skewed medical datasets, real progress shows up in minority-class recall — not accuracy.
 ### Generated Chest X-rays (Normal Class)
-![Synthetic X-rays](Results/03_synthetic_xrays.jpg)
+![Synthetic X-rays](Results/03_synthetic_xrays.png)
 
 ### Training Metrics — Original vs GAN-Augmented
 ![Metrics](Results/05_metrics_comparison.jpg)
