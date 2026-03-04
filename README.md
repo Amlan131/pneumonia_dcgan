@@ -25,6 +25,25 @@ learned pathology, but because it learned prevalence.
 
 Accuracy barely moved. That was the point.  
 In skewed medical datasets, real progress shows up in minority-class recall — not accuracy.
+## Honest Assessment
+
+GAN augmentation did not improve overall accuracy or Macro F1.  
+What it did improve was **Normal Recall (0.57 → 0.66)** and **AUC (0.9419 → 0.9451)**.
+
+In a clinical context, missing a healthy patient (false positive) is far less 
+costly than missing a pneumonia case (false negative). The GAN helped reduce 
+the model's systematic blind spot on the minority class — at the cost of 
+marginal overall metric degradation.
+
+**Limitations**
+- Dataset resolution is 28×28 — too low for real clinical use
+- GAN training at this scale is unstable and results may vary across runs
+- A simpler fix (class weights or oversampling) may achieve similar recall 
+  gains with far less complexity
+
+This project was an experiment in understanding *where* augmentation helps 
+and *where* it does not — not a claim that GANs are the right tool for this problem.
+
 ### Generated Chest X-rays (Normal Class)
 ![Synthetic X-rays](Results/03_synthetic_xrays.png)
 
